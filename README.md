@@ -108,7 +108,7 @@ PermissionUtils.requestPermissions(context, permissions, requestCode, new Permis
 ~~~
 
 # 依赖
-在你的根目录的build.gradle中添加配置[com.github.gh-zhang-quan:permission:1.0.0](https://github.com/gh-zhang-quan/aspectj_plugin)如下:
+在你的根目录的build.gradle中添加配置[com.github.gh-zhang-quan:aspectj_plugin:1.0.1](https://github.com/gh-zhang-quan/aspectj_plugin)如下:
 ~~~
 buildscript {
  
