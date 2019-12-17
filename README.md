@@ -4,7 +4,7 @@ Permission为权限请求框架，基于aspectj实现，使用注解即可请求
 NeedPermission支持在所有的方法中使用和activity的类上使用,提供了权限前操作，权限后的处理(权限拒绝或不再提醒)等功能。
 # 使用
 ### 使用到的类:
-  1. **Permission**:用于初始化的类
+  1. **MyPermission**:用于初始化的类
   1. **@NeedPermission**:请求权限的注解,可以作用于任何类的方法和activity类上,拥有参数:
       - value:要请求的权限
       - requestCode:请求码
@@ -25,7 +25,7 @@ NeedPermission支持在所有的方法中使用和activity的类上使用,提供
   ~~~
   public void onCreate() {
         super.onCreate();
-        Permission.getInstance().init(getApplicationContext(),new PermissionConfig());//PermissionConfig如果不用可设置为null
+        MyPermission.getInstance().init(getApplicationContext(),new PermissionConfig());//PermissionConfig如果不用可设置为null
     }
   ~~~
   
